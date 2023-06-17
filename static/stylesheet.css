@@ -1,0 +1,69 @@
+﻿header {
+    background-color: #ffffff;
+    height: 50;
+    mergin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+
+.main {
+    height: 800px;
+}
+
+
+
+h2 {
+    color: #444444;
+    margin: 90px 0px;
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+li {
+    width: 15%;
+    text-align: center;
+    justify-content: center;
+}
+
+img {
+    width: 80%; /* 親であるliの幅に対しての割合 */
+    justify-content: center;
+}
+
+p {
+    color: #444444;
+    margin: 50px 0px 30px 0px;
+    text-align: center;
+}
+
+.answer {
+    color: #444444;
+    margin: 70px 0px 30px 0px;
+    text-align: center;
+}
+
+form {
+    text-align: center;
+}
+
+footer {
+    background-color: #ffc0cb;
+    height: 110px;
+    margin: -8px;
+    position: relative;
+}
+
+
+
+small {
+    margin: 15px 25px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
