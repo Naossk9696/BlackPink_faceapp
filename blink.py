@@ -5,6 +5,8 @@ from flask import Flask, request, redirect, render_template, flash
 from werkzeug.utils import secure_filename
 from tensorflow.keras.models import Sequential,load_model
 from tensorflow.keras.preprocessing import image
+import tensorflow as tf
+from tensorflow import keras
 
 classes = ['Jennie', 'Jisoo', 'Lisa', 'Rose']
 image_size = 150
@@ -18,7 +20,7 @@ def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
 
-model = load_model('./model.h5')
+model =  keras.models.load_model('./model.h5')
 
 
 @app.route('/', methods=['GET', 'POST'])
