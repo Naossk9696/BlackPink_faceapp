@@ -38,10 +38,12 @@ def upload_file():
             filepath = os.path.join(UPLOAD_FOLDER, filename)
             print(filepath)
 
+            #受け取った画像を読み込みnp形式に変換
             img = image.load_img(filepath, target_size=(image_size, image_size))
             img = image.img_to_array(img)
             data = np.array([img])
 
+            #変換したデータをモデルに渡して予測する
             result = model.predict(data)[0]
             predicted = result.argmax()
 
@@ -51,9 +53,9 @@ def upload_file():
             #   img_base64 = base64.b64encode(f.read())
 
             #return render_template('index.html', answer=pred_answer, img=img_base64)
-        return render_template('index.html',answer=pred_answer,imagefile=filepath)
+        return render_template('index.html',answer=pred_answer)
 
-    return render_template('index.html',answer='', img='')
+    return render_template('index.html',answer='')
     #return render_template('index.html',answer='')
 
 if __name__ == "__main__":
