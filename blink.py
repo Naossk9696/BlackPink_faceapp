@@ -47,14 +47,14 @@ def upload_file():
 
             pred_answer = 'This member is  ' + classes[predicted] + '.'
 
-            #with open(filepath, 'rb') as f:
-            #    img_base64 = base64.b64encode(f.read())
+            with open(filepath, 'rb') as f:
+                img_base64 = base64.b64encode(f.read())
 
-            #return render_template('index.html', answer=pred_answer, img=img_base64)
-            return render_template('index.html',answer=pred_answer,imagefile=filepath)
+            return render_template('index.html', answer=pred_answer, img=img_base64)
+            #return render_template('index.html',answer=pred_answer,imagefile=filepath)
 
-    #return render_template('index.html',answer='', img='')
-    return render_template('index.html',answer='')
+    return render_template('index.html',answer='', img='')
+    #return render_template('index.html',answer='')
 
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 8080))
