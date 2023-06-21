@@ -17,6 +17,12 @@ app = Flask(__name__)
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
+ath_to_saved_model = "path/to/saved/model"
+if os.path.exists(path_to_saved_model):
+    print("SavedModel file exists")
+else:
+    print("SavedModel file does not exist")
+
 model = load_model('./model.h5')
 
 
