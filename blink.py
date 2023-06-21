@@ -7,7 +7,7 @@ from tensorflow.keras.models import Sequential,load_model
 from tensorflow.keras.preprocessing import image
 
 classes = ['Jennie', 'Jisoo', 'Lisa', 'Rose']
-image_size = 200
+image_size = 150
 
 UPLOAD_FOLDER = 'uploads'
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
@@ -35,12 +35,13 @@ def upload_file():
             file.save(os.path.join(UPLOAD_FOLDER, filename))
             filepath = os.path.join(UPLOAD_FOLDER, filename)
 
-            img = image.load_img(filepath, grayscale=False, target_size=(image_size, image_size))
+            img = image.load_img(filepath, target_size=(image_size, image_size))
             img = image.img_to_array(img)
             data = np.array([img])
 
             result = model.predict(data)[0]
             predicted = result.argmax()
+
             pred_answer = 'This member is  ' + classes[predicted] + '.'
 
             with open(filepath, 'rb') as f:
