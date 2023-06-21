@@ -44,7 +44,7 @@ def upload_file():
             pred_answer = 'This member is  ' + classes[predicted] + '.'
 
             with open(filepath, 'rb') as f:
-                img_base64 = base64.b64encode(f.read()).decode('utf-8')
+                img_base64 = base64.b64encode(f.read())
 
             return render_template('index.html', answer=pred_answer, img=img_base64)
 
