@@ -3,7 +3,7 @@ import base64
 import numpy as np
 from flask import Flask, request, redirect, render_template, flash
 from werkzeug.utils import secure_filename
-from tensorflow.keras.models import Sequential, load_model
+from tensorflow.keras.models import Sequential,load_model
 from tensorflow.keras.preprocessing import image
 
 classes = ['Jennie', 'Jisoo', 'Lisa', 'Rose']
@@ -24,7 +24,7 @@ model = load_model('./model.h5',compile=False)
 def upload_file():
     if request.method == 'POST':
         if 'file' not in request.files:
-            flash('No File')
+            flash('No file')
             return redirect(request.url)
         file = request.files['file']
         if file.filename == '':
@@ -44,7 +44,7 @@ def upload_file():
             pred_answer = 'This member is  ' + classes[predicted] + '.'
 
             with open(filepath, 'rb') as f:
-                img_base64 = base64.b64encode(f.read())
+                img_base64 = base64.b64encode(f.read()).decode('utf-8')
 
             return render_template('index.html', answer=pred_answer, img=img_base64)
 
