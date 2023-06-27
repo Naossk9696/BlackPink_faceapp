@@ -1,7 +1,7 @@
 ﻿header {
     background-color: #ffffff;
     height: 50;
-    mergin: 0;
+    mergin: auto;
     display: flex;
     justify-content: center;
 }
@@ -26,13 +26,13 @@ ul {
 }
 
 li {
-    width: 15%;
+    width: 50%;
     text-align: center;
     justify-content: center;
 }
 
 img {
-    width: 80%; /* 親であるliの幅に対しての割合 */
+    width: 100%; /* 親であるliの幅に対しての割合 */
     justify-content: center;
 }
 
