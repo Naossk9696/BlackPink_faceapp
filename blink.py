@@ -13,7 +13,7 @@ image_size = 150
 UPLOAD_FOLDER = 'uploads'
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
 
-app = Flask(__name__)
+app = Flask(__name__,static_folder='./templates')
 
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
@@ -49,10 +49,7 @@ def upload_file():
 
             pred_answer = 'This member is  ' + classes[predicted] + '.'
 
-            #with open(filepath, 'rb') as f:
-            #   img_base64 = base64.b64encode(f.read())
-
-            #return render_template('index.html', answer=pred_answer, img=img_base64)
+           
         return render_template('index.html',answer=pred_answer)
 
     return render_template('index.html',answer='')
