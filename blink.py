@@ -13,7 +13,7 @@ image_size = 150
 UPLOAD_FOLDER = 'uploads'
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
 
-app = Flask(__name__, static_folder='./templates/images')
+app = Flask(__name__,static_folder="./templates/images")
 
 
 def allowed_file(filename):
