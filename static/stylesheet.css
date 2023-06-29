@@ -10,10 +10,7 @@
 .main {
     height: 500px;
     text-align: center;
-    margin-right: auto;
 }
-
-
 
 h2 {
     color: #444444;
@@ -22,9 +19,8 @@ h2 {
 }
 
 
-
 img {
-    width: 100%; /* 親であるliの幅に対しての割合 */
+    width: 50%; /* 親であるliの幅に対しての割合 */
     justify-content: center;
 }
 
@@ -50,7 +46,6 @@ footer {
     margin: -8px;
     position: relative;
 }
-
 
 
 small {
