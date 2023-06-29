@@ -1,7 +1,7 @@
 ﻿eader {
     background-color: #ffffff;
-    height: 50;
-    mergin: 0;
+    height: 50px;
+    margin: 0;
     display: flex;
     justify-content: center;
 }
@@ -9,7 +9,6 @@
 
 .main {
     height: 800px;
-    height: 500px;
 }
 
 
