@@ -8,7 +8,7 @@
 
 
 .main {
-    height: 800px;
+    height: 500px;
 }
 
 
@@ -29,6 +29,7 @@ li {
     width: 50%;
     text-align: center;
     justify-content: center;
+    list-style-type: none;
 }
 
 img {
