@@ -4,6 +4,7 @@
     margin: 0;
     display: flex;
     justify-content: center;
+    text-align: center;
 }
 
 
@@ -21,19 +22,16 @@ h2 {
 
 ul {
     display: flex;
-    list-style: none;
-    justify-content: center;
 }
 
 li {
-    width: 15%;
+    width: 30%;
     text-align: center;
-    justify-content: center;
+    list-style: none;
 }
 
 img {
-    width: 80%; /* 親であるliの幅に対しての割合 */
-    justify-content: center;
+    width: 100%; /* 親であるliの幅に対しての割合 */
 }
 
 p {
