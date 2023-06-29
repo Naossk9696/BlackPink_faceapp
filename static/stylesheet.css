@@ -10,6 +10,7 @@
 .main {
     height: 500px;
     text-align: center;
+    margin:0 auto;
 }
 
 h2 {
@@ -20,7 +21,7 @@ h2 {
 
 
 img {
-    width: 50%; /* 親であるliの幅に対しての割合 */
+    width: 100%; /* 親であるliの幅に対しての割合 */
     justify-content: center;
 }
 
