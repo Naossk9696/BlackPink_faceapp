@@ -8,14 +8,22 @@
 
 
 .main {
-    height: 500px;
+    height: 1000px;
     text-align: center;
-    margin: 0 auto;
+    margin: auto;
+    display: flex;
+    justify-content: center
 }
 
 img {
     width: 100%; /* 親であるliの幅に対しての割合 */
     justify-content: center;
+    list-style-type: none;
+
+}
+
+li {
+    list-style-type: none;
 }
 
 p {
@@ -37,7 +45,7 @@ form {
 footer {
     background-color: #ffc0cb;
     height: 110px;
-    margin: -8px;
+    margin: auto;
     position: relative;
 }
 
