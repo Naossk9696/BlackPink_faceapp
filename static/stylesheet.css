@@ -1,29 +1,40 @@
-﻿header {
+﻿eader {
     background-color: #ffffff;
-    height: 50px;
-    margin: auto;
+    height: 50;
+    mergin: 0;
     display: flex;
     justify-content: center;
 }
 
 
 .main {
-    height: 1000px;
-    text-align: center;
-    margin: auto;
-    display: flex;
-    justify-content: center
+    height: 800px;
+    height: 500px;
 }
 
-img {
-    width: 100%; /* 親であるliの幅に対しての割合 */
-    justify-content: center;
-    list-style-type: none;
 
+
+h2 {
+    color: #444444;
+    margin: 90px 0px;
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
 }
 
 li {
-    list-style-type: none;
+    width: 15%;
+    text-align: center;
+    justify-content: center;
+}
+
+img {
+    width: 80%; /* 親であるliの幅に対しての割合 */
+    justify-content: center;
 }
 
 p {
@@ -45,7 +56,7 @@ form {
 footer {
     background-color: #ffc0cb;
     height: 110px;
-    margin: auto;
+    margin: -8px;
     position: relative;
 }
 
