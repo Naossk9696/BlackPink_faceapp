@@ -28,12 +28,14 @@ p {
     color: #444444;
     margin: 50px 0px 30px 0px;
     text-align: center;
+    margin:auto;
 }
 
 .answer {
     color: #444444;
     margin: 70px 0px 30px 0px;
     text-align: center;
+    margin: auto;
 }
 
 form {
