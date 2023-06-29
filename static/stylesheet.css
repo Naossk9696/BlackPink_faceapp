@@ -20,18 +20,7 @@ h2 {
     text-align: center;
 }
 
-ul {
-    display: flex;
-    list-style: none;
-    justify-content: center;
-}
 
-li {
-    width: 50%;
-    text-align: center;
-    justify-content: center;
-    list-style-type: none;
-}
 
 img {
     width: 100%; /* 親であるliの幅に対しての割合 */
