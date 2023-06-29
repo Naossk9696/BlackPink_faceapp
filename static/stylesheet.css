@@ -14,18 +14,17 @@
 
 ul {
     padding-left: 0;
-    list-style: none;
 }
 
 li {
-    width: 30%;
+    width: 40%;
     text-align: center;
-    list-style: none;
+    list-style:none;
 }
 
 img {
     width: 100%; /* 親であるliの幅に対しての割合 */
-    list-style: none;
+
 }
 
 
