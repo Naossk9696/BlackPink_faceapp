@@ -1,7 +1,7 @@
 ﻿header {
     background-color: #ffffff;
     height: 50px;
-    margin: 0;
+    margin: auto;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -13,17 +13,6 @@
 }
 
 
-
-h2 {
-    color: #444444;
-    margin: 90px 0px;
-    text-align: center;
-}
-
-ul {
-    display: flex;
-}
-
 li {
     width: 30%;
     text-align: center;
@@ -32,6 +21,7 @@ li {
 
 img {
     width: 100%; /* 親であるliの幅に対しての割合 */
+    list-style: none;
 }
 
 p {
